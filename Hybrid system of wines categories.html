@@ -1304,7 +1304,19 @@ padding-bottom: 1px;
 </div>
 </div></section>
  <footer class="footer2" id="p3"><h6> Copyright ©2018 Maria Pesma. All Rights Reserved 2018. You can view this infographic on VISUALLY.COM</h6></footer>
-<script>
+<script type="text/javascript">
+$(document).ready(function () {
+    //Disable full page
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+    
+    //Disable part of page
+    $("#id").on("contextmenu",function(e){
+        return false;
+    });
+});
+</script>
 <script type="text/javascript">
 $(document).ready(function () {
     //Disable full page
